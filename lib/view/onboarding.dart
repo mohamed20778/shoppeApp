@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/onboardhellocard.dart';
 import 'package:shoppe/widgets/onboardreadycard.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HelloScreen extends StatefulWidget {
@@ -74,7 +74,7 @@ class HelloScreenState extends State<HelloScreen> {
                       width: context.setWidth(20),
                       height: context.setHeight(20),
                       borderRadius: BorderRadius.circular(10.r),
-                      color: blucolor,
+                      color: AppColor.blueColor,
                     ),
                   ),
                   controller: controller,

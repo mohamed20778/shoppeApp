@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shoppe/widgets/customRow.dart';
 import 'package:shoppe/widgets/favoriteItemCard.dart';
 import 'package:shoppe/widgets/horizontal_list.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class FavouriteScreen extends StatefulWidget {
   const FavouriteScreen({super.key});

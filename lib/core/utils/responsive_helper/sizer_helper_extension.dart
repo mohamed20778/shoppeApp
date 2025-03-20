@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shoppe/responsive_helper/device_information.dart';
+import 'package:shoppe/core/utils/responsive_helper/device_information.dart';
 
 extension ResponsiveHelperExtension on BuildContext {
   // Get the DeviceInfo singleton instance

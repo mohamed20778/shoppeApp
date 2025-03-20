@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class Categoriescard extends StatefulWidget {
   const Categoriescard({super.key});
@@ -14,9 +14,12 @@ class _CategoriescardState extends State<Categoriescard> {
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: BoxConstraints(
-        maxHeight: context.isLandscape?context.setHeight(192)*1.5:context.setHeight(192),
-        maxWidth: context.isLandscape?context.setWidth(165)*1.5:context.setWidth(165)
-      ),
+          maxHeight: context.isLandscape
+              ? context.setHeight(192) * 1.5
+              : context.setHeight(192),
+          maxWidth: context.isLandscape
+              ? context.setWidth(165) * 1.5
+              : context.setWidth(165)),
       child: Card(
         color: Colors.white,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9.r)),
@@ -28,7 +31,6 @@ class _CategoriescardState extends State<Categoriescard> {
               width: double.infinity,
               'assets/images/clothescategory.png',
               fit: BoxFit.fill,
-              
             ),
           ),
           SizedBox(
@@ -63,13 +65,14 @@ class _CategoriescardState extends State<Categoriescard> {
                         fontSize: context.setSp(12),
                       ),
                     ),
-                    
                   ),
                 ),
               ],
             ),
           ),
-          SizedBox(height: context.setHeight(5),)
+          SizedBox(
+            height: context.setHeight(5),
+          )
         ]),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/constants.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/view/auth/loginscreen.dart';
 
 class ReusableRow extends StatelessWidget {

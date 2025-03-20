@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 // ignore: must_be_immutable
 class MyButton extends StatelessWidget {

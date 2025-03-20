@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/custom_form_field.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/view/auth/loginscreen.dart';
 
 class PasswordScreen extends StatefulWidget {
@@ -112,7 +112,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                          color: blucolor,
+                          color: AppColor.blueColor,
                           borderRadius: BorderRadius.circular(50)),
                       child: IconButton(
                         onPressed: () {

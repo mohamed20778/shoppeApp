@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class ProfileAvatar extends StatelessWidget {
   const ProfileAvatar({super.key});

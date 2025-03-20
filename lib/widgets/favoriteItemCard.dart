@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/ColorOrSizeWidget.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class FavouriteItemCard extends StatefulWidget {
   const FavouriteItemCard({super.key});
@@ -132,7 +132,7 @@ class _FavouriteItemCardState extends State<FavouriteItemCard> {
                       onPressed: () {},
                       icon: FaIcon(
                         Icons.add_shopping_cart_outlined,
-                        color: blucolor,
+                        color: AppColor.blueColor,
                         size: context.setWidth(24),
                       ),
                     ),

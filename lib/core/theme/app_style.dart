@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/core/theme/app_fonts.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class AppStyle {
   static TextStyle headlinestyle1(BuildContext context) => TextStyle(

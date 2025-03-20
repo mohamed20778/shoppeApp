@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/theme/app_color.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 import 'package:shoppe/widgets/address_Item.dart';
 import 'package:shoppe/widgets/categoriscard.dart';
@@ -9,7 +10,6 @@ import 'package:shoppe/widgets/custom_button.dart';
 import 'package:shoppe/widgets/horizontal_list.dart';
 import 'package:shoppe/widgets/profile_appbar.dart';
 import 'package:shoppe/widgets/reusable_row.dart';
-import 'package:shoppe/constants.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -89,7 +89,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: const Color(0xffE5EBFC),
                     width: context.setButtonWidth(85),
                     height: context.setButtonHeight(35),
-                    textcolor: blucolor),
+                    textcolor: AppColor.blueColor),
                 MyButton(
                     buttonfunction: () {},
                     fontSize: context.setSp(16),
@@ -97,7 +97,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: const Color(0xffE5EBFC),
                     width: context.setButtonWidth(118),
                     height: context.setButtonHeight(35),
-                    textcolor: blucolor),
+                    textcolor: AppColor.blueColor),
                 MyButton(
                     buttonfunction: () {},
                     fontSize: context.setSp(16),
@@ -105,7 +105,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: const Color(0xffE5EBFC),
                     width: context.setButtonWidth(118),
                     height: context.setButtonHeight(35),
-                    textcolor: blucolor),
+                    textcolor: AppColor.blueColor),
               ],
             ),
             SizedBox(

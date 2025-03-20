@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shoppe/core/theme/app_color.dart';
+import 'package:shoppe/core/theme/app_fonts.dart';
 import 'package:shoppe/widgets/custom_button.dart';
 import 'package:shoppe/widgets/custom_form_field.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/view/onboarding.dart';
 
 class Registerscreen extends StatefulWidget {
@@ -48,14 +49,14 @@ class _RegisterscreenState extends State<Registerscreen> {
                         style: TextStyle(
                             fontSize: context.setSp(50),
                             fontWeight: FontWeight.bold,
-                            fontFamily: ralewayfont),
+                            fontFamily: AppFonts.raleway),
                       ),
                       Text(
                         'Account',
                         style: TextStyle(
                             fontSize: context.setSp(50),
                             fontWeight: FontWeight.bold,
-                            fontFamily: ralewayfont),
+                            fontFamily: AppFonts.raleway),
                       ),
                       SizedBox(
                         height: context.setHeight(54),
@@ -110,7 +111,7 @@ class _RegisterscreenState extends State<Registerscreen> {
             Column(children: [
               MyButton(
                 text: 'Done',
-                color: blucolor,
+                color: AppColor.blueColor,
                 width: context.setButtonWidth(335),
                 height: context.setButtonHeight(61),
                 textcolor: Colors.white,

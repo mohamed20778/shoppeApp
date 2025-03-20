@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/custom_button.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/view/home/home_screen.dart';
 
 class OnboardReadyCard extends StatelessWidget {
@@ -50,7 +50,7 @@ class OnboardReadyCard extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const HomePage()));
               },
               text: "Let's Start",
-              color: blucolor,
+              color: AppColor.blueColor,
               width: context.setButtonWidth(201),
               height: context.setButtonHeight(50),
               textcolor: Colors.white),

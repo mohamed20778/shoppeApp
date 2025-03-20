@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/theme/app_color.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/widgets/circle_button.dart';
 import 'package:shoppe/widgets/custom_button.dart';
 import 'package:shoppe/widgets/profile_avatar.dart';
-import 'package:shoppe/constants.dart';
 
 class ProfileAppbar extends StatelessWidget {
   const ProfileAppbar({super.key});
@@ -21,7 +21,7 @@ class ProfileAppbar extends StatelessWidget {
             MyButton(
               buttonfunction: () {},
               text: 'My Activity',
-              color: blucolor,
+              color: AppColor.blueColor,
               width: context.setButtonWidth(115),
               height: context.setButtonHeight(35),
               textcolor: Colors.white,

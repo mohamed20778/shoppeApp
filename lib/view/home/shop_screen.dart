@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/categScrollCardsview.dart';
 import 'package:shoppe/widgets/customRow.dart';
 import 'package:shoppe/widgets/custom_form_field.dart';
 import 'package:shoppe/widgets/horizontal_list.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
@@ -53,7 +53,7 @@ class _ShopPage extends State<ShopPage> {
                       onPressed: () {},
                       icon: const Icon(
                         Icons.camera_alt_outlined,
-                        color: blucolor,
+                        color: AppColor.blueColor,
                       ),
                     ),
                   ),

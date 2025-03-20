@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/address_Item.dart';
 import 'package:shoppe/widgets/cart_Item.dart';
 import 'package:shoppe/widgets/custom_button.dart';
 import 'package:shoppe/widgets/favoriteItemCard.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class CartScreen extends StatefulWidget {
   const CartScreen({super.key});
@@ -89,7 +89,7 @@ class _CartScreenState extends State<CartScreen> {
                     buttonfunction: () {},
                     fontSize: context.setSp(16),
                     text: 'Checkout',
-                    color: blucolor,
+                    color: AppColor.blueColor,
                     width: context.setButtonWidth(128),
                     height: context.setButtonHeight(40),
                     textcolor: Colors.white),

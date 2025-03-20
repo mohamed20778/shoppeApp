@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shoppe/widgets/recentlyviewItem.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 class HorizontalList extends StatelessWidget {
   const HorizontalList({super.key});

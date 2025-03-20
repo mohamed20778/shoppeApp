@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shoppe/core/theme/app_color.dart';
 import 'package:shoppe/widgets/custom_button.dart';
 import 'package:shoppe/widgets/custom_form_field.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 import 'package:shoppe/view/auth/passworscreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -82,7 +82,7 @@ class LoginScreenState extends State<LoginScreen> {
                                       const PasswordScreen()));
                         },
                         text: 'Next',
-                        color: blucolor,
+                        color: AppColor.blueColor,
                         width: context.setButtonWidth(335),
                         height: context.setButtonHeight(61),
                         textcolor: Colors.white),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shoppe/constants.dart';
-import 'package:shoppe/responsive_helper/sizer_helper_extension.dart';
+import 'package:shoppe/core/theme/app_color.dart';
+import 'package:shoppe/core/utils/responsive_helper/sizer_helper_extension.dart';
 
 // ignore: must_be_immutable
 class CircleButton extends StatelessWidget {
@@ -19,12 +19,13 @@ class CircleButton extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.circular(50),
           border: Border.all(
-              color: borderColor == null ? blucolor : borderColor!, width: 2)),
+              color: borderColor == null ? AppColor.blueColor : borderColor!,
+              width: 2)),
       child: IconButton(
         onPressed: () {},
         icon: Icon(
           icon,
-          color: blucolor,
+          color: AppColor.blueColor,
           size: context.setWidth(12),
         ),
       ),
